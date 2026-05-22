@@ -1,0 +1,1 @@
+Search recipes using TheMealDB API. Enter ingredient name and get recipes with photos, ingredients, and YouTube tutorial.
