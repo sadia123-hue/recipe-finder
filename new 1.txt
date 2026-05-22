@@ -1,0 +1,22 @@
+Search recipes using TheMealDB API. Enter ingredient name and get recipes with photos, ingredients, and YouTube tutorial.
+
+# ANSWERS
+
+1. How to run
+1. Clone: git clone 
+2. Open index.html` in Chrome
+3. Requirements: Modern browser
+
+2. Stack choice
+Used HTML + JS + CSS because it's a small project with single API call. 
+
+3. One real edge case
+Problem: TheMealDB API returns meals: null when search has no results, not empty array. Initial code crashed on .map() of null.
+Fix: Added null check at script.js → if(data.meals === null). Now shows "No recipes found" message. Without this, user sees blank screen and thinks app is broken.
+
+4. AI usage
+Used Meta AI to generate CSS grid layout for recipe cards
+
+5. Honest gap
+Current gap: Cards are not responsive on mobile they look too big. Also no loading skeleton UI.
+Fix plan: With 1 more day, I would add CSS media query
